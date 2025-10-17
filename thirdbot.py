@@ -12,7 +12,7 @@ def welcome(message):
                                                      callback_data='menu')
     keyboard.add(button_start)
     bot.send_message(chat_id,
-                     'Добро пожаловать в бота экскурсовода по !',
+                     'Добро пожаловать в бота экскурсовода по Москве!',
                      reply_markup=keyboard)
 
 @bot.callback_query_handler(func=lambda call: call.data == 'menu')
@@ -33,7 +33,7 @@ def menu(call):
             keyboard.add(buttons[i])
     bot.send_message(chat_id=chat_id, 
                          text=('Привет! Я бот экскурсовод по самым вкусным, исторически насыщенным и '
-                         'интересным местам Москвы, чтобы выбрать ресторан, нажми на кнопку!'), reply_markup=keyboard)
+                         'интересным местам Москвы, чтобы выбрать место, нажми на кнопку!'), reply_markup=keyboard)
     
 
 @bot.callback_query_handler(func=lambda call: 'kafe' in call.data)
