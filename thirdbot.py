@@ -12,7 +12,7 @@ def welcome(message):
                                                      callback_data='menu')
     keyboard.add(button_start)
     bot.send_message(chat_id,
-                     'Добро пожаловать в бота экскурсовода!',
+                     'Добро пожаловать в бота экскурсовода по !',
                      reply_markup=keyboard)
 
 @bot.callback_query_handler(func=lambda call: call.data == 'menu')
@@ -47,8 +47,8 @@ def cafe(call):
     cafe_map = config.MapLinks[cafe_id-1]
     bot.delete_message(chat_id, message_id)
     keyboard = telebot.types.InlineKeyboardMarkup(row_width=1)
-    button_back = telebot.types.InlineKeyboardButton(text="Назад", callback_data='menu')
-    button_map = telebot.types.InlineKeyboardButton(text='На карте', url=cafe_map)
+    button_back = telebot.types.InlineKeyboardButton(text="↩️ Назад", callback_data='menu')
+    button_map = telebot.types.InlineKeyboardButton(text='🗺 На карте', url=cafe_map)
     keyboard.add(button_map, button_back)
     bot.send_photo(chat_id=chat_id, photo = cafe_photo, caption=f'{cafe_info}',reply_markup=keyboard)
 
