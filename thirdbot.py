@@ -45,11 +45,13 @@ def cafe(call):
     cafe_info = config.Descriptions[cafe_id-1]
     cafe_photo = config.Images[cafe_id-1]
     cafe_map = config.MapLinks[cafe_id-1]
+    cafe_link = config.CiteLinks[cafe_id-1]
     bot.delete_message(chat_id, message_id)
     keyboard = telebot.types.InlineKeyboardMarkup(row_width=1)
     button_back = telebot.types.InlineKeyboardButton(text="↩️ Назад", callback_data='menu')
     button_map = telebot.types.InlineKeyboardButton(text='🗺 На карте', url=cafe_map)
-    keyboard.add(button_map, button_back)
+    button_info = telebot.types.InlineKeyboardButton(text='🔍 Узнать больше', url=cafe_link)
+    keyboard.add(button_map, button_info, button_back)
     bot.send_photo(chat_id=chat_id, photo = cafe_photo, caption=f'{cafe_info}',reply_markup=keyboard)
 
 if __name__ == '__main__':

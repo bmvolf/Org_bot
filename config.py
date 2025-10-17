@@ -34,9 +34,20 @@ Images = ['https://avatars.mds.yandex.net/get-altay/953593/2a00000188fd54d7cd21a
           'https://avatars.mds.yandex.net/i?id=d70fa50fb3f25b6e5352909187f26e59_l-5084109-images-thumbs&n=13',
           'https://avatars.mds.yandex.net/get-altay/10648814/2a0000018b6733f31ece3aeb59bf861e0aa0/orig',
           'https://www.gdebar.ru/data/app/bar/img/gallery/639/254134.webp']
+
 MapLinks = ['https://yandex.ru/maps/-/CLVBmWNn', 'https://yandex.ru/maps/-/CLVBJU4-',
             'https://yandex.ru/maps/-/CLVBbPM3', 'https://yandex.ru/maps/-/CLVym-Zb',
             'https://yandex.ru/maps/-/CLVBnFZS', 'https://yandex.ru/maps/-/CLVBnRP0',
             'https://yandex.ru/maps/-/CLVBnVl1', 'https://yandex.ru/maps/-/CLVBn6im',
             'https://yandex.ru/maps/-/CLVBnKjS', 'https://yandex.ru/maps/-/CLVBn8zT']
-CiteLinks = []
+
+CiteLinks = ['https://gum.ru/gastronom-1/',
+            'https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D0%B8_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8',
+            'https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%B0%D0%B2%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B1%D0%B0%D0%B7%D0%B0%D1%80_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)',
+            'https://yar-restoran.ru/',
+            'https://cafe-pushkin.ru/',
+            'https://metropol-moscow.ru/kitchen/restoran-metropol/',
+            'https://restcdl.ru/',
+            'https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%BD%D0%B0_%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%BE%D0%B9',
+            'https://danilovskymarket.ru/ru',
+            'https://www.restoblomov.ru/']
