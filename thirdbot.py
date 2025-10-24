@@ -23,7 +23,7 @@ def menu(call):
     bot.delete_message(chat_id, message_id)
     keyboard = telebot.types.InlineKeyboardMarkup(row_width=2)
     buttons = []
-    for i in range(1, 11):
+    for i in range(1, 14):
         button = telebot.types.InlineKeyboardButton(text=config.Names[i-1], callback_data=f'kafe_{i}')
         buttons.append(button)
     for i in range(0, len(buttons), 2):
