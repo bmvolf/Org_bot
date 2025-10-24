@@ -8,11 +8,11 @@ bot = telebot.TeleBot(TOKEN)
 def welcome(message):
     chat_id = message.chat.id
     keyboard = telebot.types.InlineKeyboardMarkup()
-    button_start = telebot.types.InlineKeyboardButton(text='🦤 Начать экскурсию!',
+    button_start = telebot.types.InlineKeyboardButton(text='🦤 Открыть путеводитель!',
                                                      callback_data='menu')
     keyboard.add(button_start)
     bot.send_message(chat_id,
-                     'Добро пожаловать в бота экскурсовода по Москве!',
+                     'Добро пожаловать в бота путеводителя по Москве и Московской области!',
                      reply_markup=keyboard)
 
 @bot.callback_query_handler(func=lambda call: call.data == 'menu')
@@ -32,8 +32,8 @@ def menu(call):
         else:
             keyboard.add(buttons[i])
     bot.send_message(chat_id=chat_id, 
-                         text=('Привет! Я бот экскурсовод по самым вкусным, исторически насыщенным и '
-                         'интересным местам Москвы, чтобы выбрать место, нажми на кнопку!'), reply_markup=keyboard)
+                         text=('Привет! Я бот путеводитель по самым вкусным, исторически насыщенным и '
+                         'интересным местам Москвы и Московской области, чтобы выбрать место, нажми на кнопку!'), reply_markup=keyboard)
     
 
 @bot.callback_query_handler(func=lambda call: 'kafe' in call.data)
